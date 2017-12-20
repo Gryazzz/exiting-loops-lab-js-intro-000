@@ -22,7 +22,7 @@ function findBy(array, findFn) {
     if (findFn(array[n])) {
       return array[n];
     } else {
-      return 'null';
+      return null;
     }
   }
 }
