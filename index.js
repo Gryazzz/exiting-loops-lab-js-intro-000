@@ -16,3 +16,13 @@ function keepGoing(array, changeValue, skipValue) {
   }
   return array;
 }
+
+function findBy(array, findFn) {
+  for (let n = 0; n < array.length; n++) {
+    if (findFn(array[n])) {
+      return array[n];
+    } else {
+      return 'null';
+    }
+  }
+}
