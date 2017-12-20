@@ -2,9 +2,8 @@ function breakOut(array, changeValue, stopValue) {
   for (let n = 0; n < array.length; n++) {
     if (array[n] !== stopValue) {
       array[n] = changeValue;
-    }
+    } else {break};
   }
-  break;
   return array;
 }
 
